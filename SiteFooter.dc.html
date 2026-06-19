@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
+</helmet>
+
+<footer style="background:#101113;border-top:3px solid #CBA14A;padding:56px 28px 36px;font-family:'Golos Text',sans-serif">
+  <div style="max-width:1280px;margin:0 auto;display:flex;flex-wrap:wrap;gap:38px;justify-content:space-between;align-items:flex-start">
+    <div style="max-width:380px">
+      <div style="display:flex;align-items:center;gap:13px;margin-bottom:16px">
+        <span style="position:relative;width:32px;height:32px;display:inline-flex">
+          <span style="position:absolute;inset:0;border:2px solid #CBA14A;border-radius:50%"></span>
+          <span style="position:absolute;inset:6px;border:1.5px solid rgba(203,161,74,0.55);border-radius:50%"></span>
+          <span style="position:absolute;top:50%;left:0;right:0;height:1.5px;background:#CBA14A;transform:translateY(-50%)"></span>
+          <span style="position:absolute;left:50%;top:0;bottom:0;width:1.5px;background:#CBA14A;transform:translateX(-50%)"></span>
+        </span>
+        <span style="font-family:'Oswald',sans-serif;font-weight:600;font-size:17px;letter-spacing:2.5px;color:#EDEBE6">ЕВРАЗИЯ</span>
+      </div>
+      <p style="font-size:13.5px;line-height:1.65;color:#86837C">Общественная организация пропаганды лучного спорта Свердловской области «Стрелковое Общество Евразия». Екатеринбург, с 2013 года.</p>
+    </div>
+
+    <nav style="display:flex;flex-wrap:wrap;gap:14px 30px;max-width:360px">
+      <a href="about.dc.html" style="font-size:14px;color:#A4A199;text-decoration:none;transition:color .2s" onmouseover="this.style.color='#CBA14A'" onmouseout="this.style.color='#A4A199'">Об обществе</a>
+      <a href="training.dc.html" style="font-size:14px;color:#A4A199;text-decoration:none;transition:color .2s" onmouseover="this.style.color='#CBA14A'" onmouseout="this.style.color='#A4A199'">Направления</a>
+      <a href="training.dc.html" style="font-size:14px;color:#A4A199;text-decoration:none;transition:color .2s" onmouseover="this.style.color='#CBA14A'" onmouseout="this.style.color='#A4A199'">Расписание</a>
+      <a href="events.dc.html" style="font-size:14px;color:#A4A199;text-decoration:none;transition:color .2s" onmouseover="this.style.color='#CBA14A'" onmouseout="this.style.color='#A4A199'">Соревнования</a>
+      <a href="prices.dc.html" style="font-size:14px;color:#A4A199;text-decoration:none;transition:color .2s" onmouseover="this.style.color='#CBA14A'" onmouseout="this.style.color='#A4A199'">Цены</a>
+      <a href="gallery.dc.html" style="font-size:14px;color:#A4A199;text-decoration:none;transition:color .2s" onmouseover="this.style.color='#CBA14A'" onmouseout="this.style.color='#A4A199'">Галерея</a>
+      <a href="contacts.dc.html" style="font-size:14px;color:#A4A199;text-decoration:none;transition:color .2s" onmouseover="this.style.color='#CBA14A'" onmouseout="this.style.color='#A4A199'">Контакты</a>
+    </nav>
+
+    <div style="display:flex;flex-direction:column;gap:7px">
+      <a href="tel:+79122305649" style="font-family:'Oswald',sans-serif;font-size:20px;letter-spacing:.5px;color:#EDEBE6;text-decoration:none">+7 (912) 230-56-49</a>
+      <a href="{{ emailHref }}" style="font-size:14px;color:#CBA14A;text-decoration:none">{{ email }}</a>
+      <span style="font-size:13.5px;color:#86837C;margin-top:4px">Екатеринбург, ул. Краснолесья, 45</span>
+    </div>
+  </div>
+  <div style="max-width:1280px;margin:34px auto 0;padding-top:22px;border-top:1px solid rgba(255,255,255,0.07);font-size:12.5px;color:#5C594F">© 2025 Стрелковое Общество Евразия</div>
+</footer>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:&quot;100%&quot;,&quot;height&quot;:340}}">
+class Component extends DCLogic {
+  renderVals() {
+    return { email: 'soekb' + '@' + 'bk.ru', emailHref: 'mailto:' + 'soekb' + '@' + 'bk.ru' };
+  }
+}
+</script>
+</body>
+</html>

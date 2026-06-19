@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:#F4F1EA;color:#1B1D21;font-family:'Golos Text',sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  ::selection{background:#CBA14A;color:#15171B}
+</style>
+</helmet>
+
+<dc-import name="SiteHeader" active="events" hint-size="100%,72px"></dc-import>
+
+<section style="background:#101113;color:#E8E6E1;padding:66px 28px 76px;position:relative;overflow:hidden">
+  <div aria-hidden="true" style="position:absolute;top:50%;right:-120px;transform:translateY(-50%);width:460px;height:460px;opacity:.5;pointer-events:none">
+    <div style="position:absolute;inset:0;border:1px solid rgba(203,161,74,0.14);border-radius:50%"></div>
+    <div style="position:absolute;inset:80px;border:1px solid rgba(203,161,74,0.2);border-radius:50%"></div>
+    <div style="position:absolute;inset:160px;border:1px solid rgba(203,161,74,0.3);border-radius:50%"></div>
+    <div style="position:absolute;top:50%;left:50%;width:10px;height:10px;background:#CBA14A;border-radius:50%;transform:translate(-50%,-50%)"></div>
+  </div>
+  <div style="position:relative;max-width:1280px;margin:0 auto">
+    <div style="display:flex;align-items:center;gap:14px;margin-bottom:16px"><span style="width:30px;height:2px;background:#CBA14A"></span><span style="font-size:12.5px;letter-spacing:3px;color:#CBA14A;text-transform:uppercase;font-weight:600">Соревнования</span></div>
+    <h1 style="font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(38px,6vw,76px);text-transform:uppercase;letter-spacing:-1px;line-height:.96">Турниры<br>и&nbsp;результаты</h1>
+    <p style="margin-top:20px;max-width:580px;font-size:17px;line-height:1.6;color:#B8B4AC">Общество ежегодно проводит собственные турниры и выступает на соревнованиях всех уровней.</p>
+  </div>
+</section>
+
+<!-- НАШИ ТУРНИРЫ -->
+<section style="padding:88px 28px;background:#F4F1EA">
+  <div style="max-width:1280px;margin:0 auto">
+    <div data-reveal="0" style="display:flex;align-items:center;gap:14px;margin-bottom:16px"><span style="width:30px;height:2px;background:#A9761B"></span><span style="font-size:12.5px;letter-spacing:3px;color:#A9761B;text-transform:uppercase;font-weight:600">Наши турниры</span></div>
+    <h2 data-reveal="1" style="font-family:'Oswald',sans-serif;font-weight:600;font-size:clamp(28px,4vw,46px);text-transform:uppercase;letter-spacing:-.5px;line-height:1.06;color:#1B1D21;margin-bottom:40px">Мы проводим</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px">
+      <div data-reveal="0" style="background:#fff;border:1px solid #E4E0D6;border-radius:12px;padding:28px;box-shadow:0 4px 22px rgba(40,33,15,0.05);transition:transform .25s,box-shadow .25s" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 16px 40px rgba(40,33,15,0.1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 22px rgba(40,33,15,0.05)'"><div style="font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#A9761B;margin-bottom:10px;font-weight:600">Лук · Пулевая</div><h3 style="font-family:'Oswald',sans-serif;font-weight:600;font-size:22px;text-transform:uppercase;line-height:1.1;color:#1B1D21">Кубок Евразии</h3><p style="margin-top:10px;font-size:14px;line-height:1.55;color:#54565B">Клубный турнир по стрельбе из лука и пулевой стрельбе. Клуб «Классик», ул. Краснолесья, 45.</p></div>
+      <div data-reveal="1" style="background:#fff;border:1px solid #E4E0D6;border-radius:12px;padding:28px;box-shadow:0 4px 22px rgba(40,33,15,0.05);transition:transform .25s,box-shadow .25s" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 16px 40px rgba(40,33,15,0.1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 22px rgba(40,33,15,0.05)'"><div style="font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#A9761B;margin-bottom:10px;font-weight:600">Лук · Филд / 3D</div><h3 style="font-family:'Oswald',sans-serif;font-weight:600;font-size:22px;text-transform:uppercase;line-height:1.1;color:#1B1D21">Гран-При Евразии</h3><p style="margin-top:10px;font-size:14px;line-height:1.55;color:#54565B">Полевая (Филд) и 3D-стрельба из лука. г. Берёзовский, п. Старопышминск.</p></div>
+      <div data-reveal="2" style="background:#fff;border:1px solid #E4E0D6;border-radius:12px;padding:28px;box-shadow:0 4px 22px rgba(40,33,15,0.05);transition:transform .25s,box-shadow .25s" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 16px 40px rgba(40,33,15,0.1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 22px rgba(40,33,15,0.05)'"><div style="font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#A9761B;margin-bottom:10px;font-weight:600">Лук · 3D</div><h3 style="font-family:'Oswald',sans-serif;font-weight:600;font-size:22px;text-transform:uppercase;line-height:1.1;color:#1B1D21">Кубок Свердловской области</h3><p style="margin-top:10px;font-size:14px;line-height:1.55;color:#54565B">3D-стрельба из лука. Екатеринбург, ГК «Уктус».</p></div>
+      <div data-reveal="3" style="background:#fff;border:1px solid #E4E0D6;border-radius:12px;padding:28px;box-shadow:0 4px 22px rgba(40,33,15,0.05);transition:transform .25s,box-shadow .25s" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 16px 40px rgba(40,33,15,0.1)'" onmouseout="this.style.transform='translateY(0)';this.style.boxShadow='0 4px 22px rgba(40,33,15,0.05)'"><div style="font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#A9761B;margin-bottom:10px;font-weight:600">Лук · Всероссийские</div><h3 style="font-family:'Oswald',sans-serif;font-weight:600;font-size:22px;text-transform:uppercase;line-height:1.1;color:#1B1D21">Малахитовые стрелы</h3><p style="margin-top:10px;font-size:14px;line-height:1.55;color:#54565B">Всероссийские соревнования по стрельбе из лука. Екатеринбург, КОСК «Россия».</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- РЕЗУЛЬТАТЫ -->
+<section style="padding:88px 28px;background:#ECE8DF">
+  <div style="max-width:1280px;margin:0 auto">
+    <div data-reveal="0" style="display:flex;align-items:center;gap:14px;margin-bottom:16px"><span style="width:30px;height:2px;background:#A9761B"></span><span style="font-size:12.5px;letter-spacing:3px;color:#A9761B;text-transform:uppercase;font-weight:600">Хроника побед</span></div>
+    <h2 data-reveal="1" style="font-family:'Oswald',sans-serif;font-weight:600;font-size:clamp(28px,4vw,46px);text-transform:uppercase;letter-spacing:-.5px;line-height:1.06;color:#1B1D21;margin-bottom:40px">Последние результаты</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px">
+      <div data-reveal="0" style="background:#fff;border:1px solid #E4E0D6;border-left:3px solid #A9761B;border-radius:12px;padding:24px;box-shadow:0 4px 22px rgba(40,33,15,0.05)"><div style="font-family:'Oswald',sans-serif;font-size:13px;letter-spacing:1px;color:#A9761B;margin-bottom:8px">31.03.2026</div><div style="font-size:15.5px;font-weight:600;color:#1B1D21;line-height:1.35">«Юный снайпер», Нижний Тагил</div><p style="margin-top:9px;font-size:13.5px;line-height:1.55;color:#6A6C70">Степан Чебаков — 1 место (ПП-40); Полина Милькова и Семён Объедков — 2 места (ПП-20); призёры в ВП-20.</p></div>
+      <div data-reveal="1" style="background:#fff;border:1px solid #E4E0D6;border-left:3px solid #A9761B;border-radius:12px;padding:24px;box-shadow:0 4px 22px rgba(40,33,15,0.05)"><div style="font-family:'Oswald',sans-serif;font-size:13px;letter-spacing:1px;color:#A9761B;margin-bottom:8px">20.03.2026</div><div style="font-size:15.5px;font-weight:600;color:#1B1D21;line-height:1.35">Первенство России по пулевой стрельбе, Ижевск</div><p style="margin-top:9px;font-size:13.5px;line-height:1.55;color:#6A6C70">Диана Гаглоева — бронза в упражнении ПП-ПС в смешанной паре с Матвеем Трифоновым.</p></div>
+      <div data-reveal="2" style="background:#fff;border:1px solid #E4E0D6;border-left:3px solid #A9761B;border-radius:12px;padding:24px;box-shadow:0 4px 22px rgba(40,33,15,0.05)"><div style="font-family:'Oswald',sans-serif;font-size:13px;letter-spacing:1px;color:#A9761B;margin-bottom:8px">14.03.2026</div><div style="font-size:15.5px;font-weight:600;color:#1B1D21;line-height:1.35">Чемпионат Екатеринбурга по стрельбе из лука</div><p style="margin-top:9px;font-size:13.5px;line-height:1.55;color:#6A6C70">Анастасия Варзина и Анна Толстых — 1 места; призёры: Палешев, Дюпина, Попов, Буслаев.</p></div>
+      <div data-reveal="0" style="background:#fff;border:1px solid #E4E0D6;border-left:3px solid #A9761B;border-radius:12px;padding:24px;box-shadow:0 4px 22px rgba(40,33,15,0.05)"><div style="font-family:'Oswald',sans-serif;font-size:13px;letter-spacing:1px;color:#A9761B;margin-bottom:8px">22.02.2026</div><div style="font-size:15.5px;font-weight:600;color:#1B1D21;line-height:1.35">Чемпионат Екатеринбурга по пневматике</div><p style="margin-top:9px;font-size:13.5px;line-height:1.55;color:#6A6C70">Диана Гаглоева — 2 место в ПП-60 с результатом 550 очков.</p></div>
+      <div data-reveal="1" style="background:#fff;border:1px solid #E4E0D6;border-left:3px solid #A9761B;border-radius:12px;padding:24px;box-shadow:0 4px 22px rgba(40,33,15,0.05)"><div style="font-family:'Oswald',sans-serif;font-size:13px;letter-spacing:1px;color:#A9761B;margin-bottom:8px">11.01.2026</div><div style="font-size:15.5px;font-weight:600;color:#1B1D21;line-height:1.35">Первенство Екатеринбурга по пулевой стрельбе</div><p style="margin-top:9px;font-size:13.5px;line-height:1.55;color:#6A6C70">Баранцева и Васев — 1 места (винтовка); команда Васев / Коробицин / Кондырев — 1 место.</p></div>
+      <div data-reveal="2" style="background:#fff;border:1px solid #E4E0D6;border-left:3px solid #A9761B;border-radius:12px;padding:24px;box-shadow:0 4px 22px rgba(40,33,15,0.05)"><div style="font-family:'Oswald',sans-serif;font-size:13px;letter-spacing:1px;color:#A9761B;margin-bottom:8px">10.01.2026</div><div style="font-size:15.5px;font-weight:600;color:#1B1D21;line-height:1.35">ВС «Малахитовые стрелы», Екатеринбург</div><p style="margin-top:9px;font-size:13.5px;line-height:1.55;color:#6A6C70">Алексей Устиновский — 1 место (КЛ); призёры в БЛ: Палешев, Дюпина. Командные победы.</p></div>
+      <div data-reveal="0" style="background:#fff;border:1px solid #E4E0D6;border-left:3px solid #A9761B;border-radius:12px;padding:24px;box-shadow:0 4px 22px rgba(40,33,15,0.05)"><div style="font-family:'Oswald',sans-serif;font-size:13px;letter-spacing:1px;color:#A9761B;margin-bottom:8px">11.12.2025</div><div style="font-size:15.5px;font-weight:600;color:#1B1D21;line-height:1.35">Чемпионат УрФО по стрельбе из лука</div><p style="margin-top:9px;font-size:13.5px;line-height:1.55;color:#6A6C70">Анна Толстых — 1 место (КЛ-б). Алексей Устиновский выполнил норматив Мастера спорта.</p></div>
+      <div data-reveal="1" style="background:#fff;border:1px solid #E4E0D6;border-left:3px solid #A9761B;border-radius:12px;padding:24px;box-shadow:0 4px 22px rgba(40,33,15,0.05)"><div style="font-family:'Oswald',sans-serif;font-size:13px;letter-spacing:1px;color:#A9761B;margin-bottom:8px">08.09.2025</div><div style="font-size:15.5px;font-weight:600;color:#1B1D21;line-height:1.35">Гран-При Евразии (Филд), Берёзовский</div><p style="margin-top:9px;font-size:13.5px;line-height:1.55;color:#6A6C70">Победы: Никита Пестов (Лонг), Алексей Устиновский (КЛ), Владимир Николашвили (БЛ), Сергей Шешин (спортинг).</p></div>
+      <div data-reveal="2" style="background:#fff;border:1px solid #E4E0D6;border-left:3px solid #A9761B;border-radius:12px;padding:24px;box-shadow:0 4px 22px rgba(40,33,15,0.05)"><div style="font-family:'Oswald',sans-serif;font-size:13px;letter-spacing:1px;color:#A9761B;margin-bottom:8px">25.08.2025</div><div style="font-size:15.5px;font-weight:600;color:#1B1D21;line-height:1.35">Чемпионат России по силуэтной стрельбе, Москва</div><p style="margin-top:9px;font-size:13.5px;line-height:1.55;color:#6A6C70">Максим Стрибицкий и Михаил Коробицын — чемпионы России. Степан Васёв — серебро.</p></div>
+    </div>
+
+    <div data-reveal="0" style="margin-top:34px">
+      <button onClick="{{ toggleArchive }}" style="background:transparent;border:1px solid #C9C2B2;color:#1B1D21;font-weight:600;font-size:14px;padding:13px 26px;border-radius:3px;cursor:pointer;transition:border-color .2s,background .2s" onmouseover="this.style.borderColor='#A9761B';this.style.background='#F4EEDF'" onmouseout="this.style.borderColor='#C9C2B2';this.style.background='transparent'">{{ archiveLabel }}</button>
+    </div>
+
+    <sc-if value="{{ archiveOpen }}" hint-placeholder-val="{{ false }}">
+      <div style="margin-top:24px;overflow-x:auto;border:1px solid #E4E0D6;border-radius:10px;background:#fff">
+        <table style="width:100%;border-collapse:collapse;min-width:620px">
+          <thead><tr style="background:#F4EFE4"><th style="text-align:left;padding:14px 18px;font-size:11.5px;letter-spacing:1.5px;text-transform:uppercase;color:#8A8780;font-weight:600">Год</th><th style="text-align:left;padding:14px 18px;font-size:11.5px;letter-spacing:1.5px;text-transform:uppercase;color:#8A8780;font-weight:600">Соревнование</th><th style="text-align:left;padding:14px 18px;font-size:11.5px;letter-spacing:1.5px;text-transform:uppercase;color:#8A8780;font-weight:600">Место проведения</th></tr></thead>
+          <tbody style="font-size:14px;color:#3A3C40">
+            <tr style="border-top:1px solid #ECE6D9"><td style="padding:13px 18px;color:#A9761B;font-family:'Oswald',sans-serif">2025</td><td style="padding:13px 18px">ВС «Малахитовые стрелы» (лук)</td><td style="padding:13px 18px;color:#6A6C70">Екатеринбург, КОСК «Россия»</td></tr>
+            <tr style="border-top:1px solid #ECE6D9"><td style="padding:13px 18px;color:#A9761B;font-family:'Oswald',sans-serif">2024</td><td style="padding:13px 18px">Кубок Евразии — стрельба из лука</td><td style="padding:13px 18px;color:#6A6C70">Клуб «Классик», Краснолесья 45</td></tr>
+            <tr style="border-top:1px solid #ECE6D9"><td style="padding:13px 18px;color:#A9761B;font-family:'Oswald',sans-serif">2024</td><td style="padding:13px 18px">Межклубные по пулевой, памяти А.П. Поддубного</td><td style="padding:13px 18px;color:#6A6C70">Клуб «Классик», Краснолесья 45</td></tr>
+            <tr style="border-top:1px solid #ECE6D9"><td style="padding:13px 18px;color:#A9761B;font-family:'Oswald',sans-serif">2024</td><td style="padding:13px 18px">Гран-При Евразии (Филд)</td><td style="padding:13px 18px;color:#6A6C70">Берёзовский, Старопышминск</td></tr>
+            <tr style="border-top:1px solid #ECE6D9"><td style="padding:13px 18px;color:#A9761B;font-family:'Oswald',sans-serif">2023</td><td style="padding:13px 18px">Гран-При Евразии по 3D</td><td style="padding:13px 18px;color:#6A6C70">Берёзовский</td></tr>
+            <tr style="border-top:1px solid #ECE6D9"><td style="padding:13px 18px;color:#A9761B;font-family:'Oswald',sans-serif">2022</td><td style="padding:13px 18px">Гран-При Евразии (Филд)</td><td style="padding:13px 18px;color:#6A6C70">Берёзовский, Старопышминск</td></tr>
+            <tr style="border-top:1px solid #ECE6D9"><td style="padding:13px 18px;color:#A9761B;font-family:'Oswald',sans-serif">2021</td><td style="padding:13px 18px">Кубок Евразии — пулевая стрельба</td><td style="padding:13px 18px;color:#6A6C70">Клуб «Классик», Краснолесья 45</td></tr>
+            <tr style="border-top:1px solid #ECE6D9"><td style="padding:13px 18px;color:#A9761B;font-family:'Oswald',sans-serif">2020</td><td style="padding:13px 18px">Кубок России по полевой стрельбе из лука</td><td style="padding:13px 18px;color:#6A6C70">Берёзовский, Старопышминск</td></tr>
+            <tr style="border-top:1px solid #ECE6D9"><td style="padding:13px 18px;color:#A9761B;font-family:'Oswald',sans-serif">2019</td><td style="padding:13px 18px">Чемпионат области по полевой стрельбе из лука</td><td style="padding:13px 18px;color:#6A6C70">Старопышминск</td></tr>
+            <tr style="border-top:1px solid #ECE6D9"><td style="padding:13px 18px;color:#A9761B;font-family:'Oswald',sans-serif">2018</td><td style="padding:13px 18px">1-й этап Кубка России по 3D</td><td style="padding:13px 18px;color:#6A6C70">СК «Курганово»</td></tr>
+            <tr style="border-top:1px solid #ECE6D9"><td style="padding:13px 18px;color:#A9761B;font-family:'Oswald',sans-serif">2013</td><td style="padding:13px 18px">Первый сбор СО Евразия</td><td style="padding:13px 18px;color:#6A6C70">Уктус</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </sc-if>
+  </div>
+</section>
+
+<dc-import name="SiteFooter" hint-size="100%,340px"></dc-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { archiveOpen: false };
+  toggleArchive = () => this.setState(s => ({ archiveOpen: !s.archiveOpen }));
+  componentDidMount() {
+    import('./site.js').then((m) => { this._m = m; m.initSite(this.el || document); }).catch((e) => console.warn(e));
+  }
+  componentDidUpdate() {
+    if (this._m) this._m.initAnimations(this.el || document);
+  }
+  renderVals() {
+    return {
+      archiveOpen: this.state.archiveOpen,
+      archiveLabel: this.state.archiveOpen ? 'Скрыть архив турниров' : 'Показать архив турниров',
+      toggleArchive: this.toggleArchive,
+    };
+  }
+}
+</script>
+</body>
+</html>

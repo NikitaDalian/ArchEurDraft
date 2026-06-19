@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:#F4F1EA;color:#1B1D21;font-family:'Golos Text',sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  ::selection{background:#CBA14A;color:#15171B}
+</style>
+</helmet>
+
+<dc-import name="SiteHeader" active="prices" hint-size="100%,72px"></dc-import>
+
+<section style="background:#101113;color:#E8E6E1;padding:66px 28px 76px;position:relative;overflow:hidden">
+  <div aria-hidden="true" style="position:absolute;top:50%;right:-120px;transform:translateY(-50%);width:460px;height:460px;opacity:.5;pointer-events:none">
+    <div style="position:absolute;inset:0;border:1px solid rgba(203,161,74,0.14);border-radius:50%"></div>
+    <div style="position:absolute;inset:80px;border:1px solid rgba(203,161,74,0.2);border-radius:50%"></div>
+    <div style="position:absolute;inset:160px;border:1px solid rgba(203,161,74,0.3);border-radius:50%"></div>
+    <div style="position:absolute;top:50%;left:50%;width:10px;height:10px;background:#CBA14A;border-radius:50%;transform:translate(-50%,-50%)"></div>
+  </div>
+  <div style="position:relative;max-width:1280px;margin:0 auto">
+    <div style="display:flex;align-items:center;gap:14px;margin-bottom:16px"><span style="width:30px;height:2px;background:#CBA14A"></span><span style="font-size:12.5px;letter-spacing:3px;color:#CBA14A;text-transform:uppercase;font-weight:600">Цены и членство</span></div>
+    <h1 style="font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(38px,6vw,76px);text-transform:uppercase;letter-spacing:-1px;line-height:.96">Стоимость<br>занятий</h1>
+    <p style="margin-top:20px;max-width:580px;font-size:17px;line-height:1.6;color:#B8B4AC">Абонементы, разовые тренировки и индивидуальные занятия. Все цены указаны в рублях.</p>
+  </div>
+</section>
+
+<section style="padding:88px 28px;background:#F4F1EA">
+  <div style="max-width:1280px;margin:0 auto">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px;align-items:start">
+      <div data-reveal="0" style="background:#fff;border:1px solid #E4E0D6;border-radius:14px;padding:32px 28px;box-shadow:0 4px 22px rgba(40,33,15,0.05)">
+        <h3 style="font-family:'Oswald',sans-serif;font-weight:600;font-size:22px;text-transform:uppercase;letter-spacing:.5px;color:#1B1D21">Абонемент</h3>
+        <p style="margin-top:6px;font-size:13px;color:#8A8780">Членский взнос · в месяц / на 6 месяцев</p>
+        <div style="margin-top:22px;display:flex;flex-direction:column">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:13px 0;border-bottom:1px solid #ECE6D9"><span style="font-size:14.5px;color:#3A3C40">Базовый</span><span style="font-family:'Oswald',sans-serif;font-size:18px;color:#1B1D21;white-space:nowrap">5000 <span style="color:#A6A299;font-size:14px">/ 28000</span></span></div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:13px 0;border-bottom:1px solid #ECE6D9"><span style="font-size:14.5px;color:#3A3C40">Для I разряда</span><span style="font-family:'Oswald',sans-serif;font-size:18px;color:#1B1D21;white-space:nowrap">4500 <span style="color:#A6A299;font-size:14px">/ 25000</span></span></div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:13px 0;border-bottom:1px solid #ECE6D9"><span style="font-size:14.5px;color:#3A3C40">Для КМС</span><span style="font-family:'Oswald',sans-serif;font-size:18px;color:#1B1D21;white-space:nowrap">4000 <span style="color:#A6A299;font-size:14px">/ 22000</span></span></div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:13px 0"><span style="font-size:14.5px;color:#3A3C40">Для МС</span><span style="font-family:'Oswald',sans-serif;font-size:18px;color:#1B1D21;white-space:nowrap">3500 <span style="color:#A6A299;font-size:14px">/ 19000</span></span></div>
+        </div>
+      </div>
+      <div data-reveal="1" style="background:#fff;border:1px solid #E4E0D6;border-radius:14px;padding:32px 28px;box-shadow:0 4px 22px rgba(40,33,15,0.05)">
+        <h3 style="font-family:'Oswald',sans-serif;font-weight:600;font-size:22px;text-transform:uppercase;letter-spacing:.5px;color:#1B1D21">Разовые</h3>
+        <p style="margin-top:6px;font-size:13px;color:#8A8780">Тренировки без абонемента</p>
+        <div style="margin-top:22px;display:flex;flex-direction:column">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:13px 0;border-bottom:1px solid #ECE6D9"><span style="font-size:14.5px;color:#3A3C40">За тренировку</span><span style="font-family:'Oswald',sans-serif;font-size:18px;color:#1B1D21">700</span></div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:13px 0"><span style="font-size:14.5px;color:#3A3C40">За 12 тренировок</span><span style="font-family:'Oswald',sans-serif;font-size:18px;color:#1B1D21">7000</span></div>
+        </div>
+        <p style="margin-top:18px;font-size:13px;line-height:1.55;color:#8A8780;padding-top:16px;border-top:1px solid #ECE6D9">При пропуске тренировок оплата переносится только на следующий месяц.</p>
+      </div>
+      <div data-reveal="2" style="background:#fff;border:1px solid #E4E0D6;border-radius:14px;padding:32px 28px;box-shadow:0 4px 22px rgba(40,33,15,0.05)">
+        <h3 style="font-family:'Oswald',sans-serif;font-weight:600;font-size:22px;text-transform:uppercase;letter-spacing:.5px;color:#1B1D21">С тренером</h3>
+        <p style="margin-top:6px;font-size:13px;color:#8A8780">Индивидуально · за час</p>
+        <div style="margin-top:22px;display:flex;flex-direction:column">
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:13px 0;border-bottom:1px solid #ECE6D9"><span style="font-size:14.5px;color:#3A3C40">Один спортсмен</span><span style="font-family:'Oswald',sans-serif;font-size:18px;color:#1B1D21">2000</span></div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:13px 0;border-bottom:1px solid #ECE6D9"><span style="font-size:14.5px;color:#3A3C40">Двое / трое / четверо</span><span style="font-family:'Oswald',sans-serif;font-size:17px;color:#1B1D21;white-space:nowrap">3600 / 4800 / 5600</span></div>
+          <div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:13px 0"><span style="font-size:14.5px;color:#3A3C40">Мастер-класс для коллектива <span style="color:#A6A299">(от 2 ч)</span></span><span style="font-family:'Oswald',sans-serif;font-size:18px;color:#1B1D21">8000</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div data-reveal="0" style="margin-top:20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px">
+      <div style="background:#FAF4E6;border:1px solid #E6D4A8;border-radius:12px;padding:24px"><div style="font-family:'Oswald',sans-serif;font-size:17px;color:#9A6A14;text-transform:uppercase;letter-spacing:.5px">Скидки</div><p style="margin-top:10px;font-size:14px;line-height:1.6;color:#54565B">−20% для второго и последующих членов семьи. −20% для детей ветеранов боевых действий.</p></div>
+      <div style="background:#FAF4E6;border:1px solid #E6D4A8;border-radius:12px;padding:24px"><div style="font-family:'Oswald',sans-serif;font-size:17px;color:#9A6A14;text-transform:uppercase;letter-spacing:.5px">Без посещений</div><p style="margin-top:10px;font-size:14px;line-height:1.6;color:#54565B">Если в текущем месяце клуб не посещали, взнос платить не обязательно.</p></div>
+      <div style="background:#FAF4E6;border:1px solid #E6D4A8;border-radius:12px;padding:24px"><div style="font-family:'Oswald',sans-serif;font-size:17px;color:#9A6A14;text-transform:uppercase;letter-spacing:.5px">Сертификат</div><p style="margin-top:10px;font-size:14px;line-height:1.6;color:#54565B">Подарочный сертификат на индивидуальное занятие — по телефону <a href="tel:+79122305649" style="color:#A9761B;white-space:nowrap">+7 (912) 230-56-49</a>.</p></div>
+    </div>
+
+    <div data-reveal="0" style="margin-top:20px;background:#101113;border-radius:14px;padding:36px 34px;display:flex;flex-wrap:wrap;gap:26px;align-items:center;justify-content:space-between">
+      <div style="max-width:680px">
+        <h3 style="font-family:'Oswald',sans-serif;font-weight:600;font-size:22px;text-transform:uppercase;letter-spacing:.5px;color:#EDEBE6">Членство в клубе</h3>
+        <p style="margin-top:10px;font-size:14.5px;line-height:1.65;color:#B8B4AC">Членами спортивного клуба могут быть лица, достигшие 18 лет. Члены клуба имеют равные права, получают информацию по всем направлениям и участвуют в мероприятиях Общества. Членство оформляется по письменному заявлению и решению Оргкомитета.</p>
+      </div>
+      <a href="contacts.dc.html" style="background:#CBA14A;color:#15171B;font-weight:600;font-size:14px;padding:14px 28px;border-radius:3px;text-decoration:none;white-space:nowrap;transition:background .2s" onmouseover="this.style.background='#E0B85C'" onmouseout="this.style.background='#CBA14A'">Подать заявление</a>
+    </div>
+  </div>
+</section>
+
+<!-- МАСТЕРСКАЯ -->
+<section style="padding:88px 28px;background:#ECE8DF">
+  <div style="max-width:1280px;margin:0 auto">
+    <div data-reveal="0" style="display:flex;align-items:center;gap:14px;margin-bottom:16px"><span style="width:30px;height:2px;background:#A9761B"></span><span style="font-size:12.5px;letter-spacing:3px;color:#A9761B;text-transform:uppercase;font-weight:600">Техпомощь</span></div>
+    <h2 data-reveal="1" style="font-family:'Oswald',sans-serif;font-weight:600;font-size:clamp(28px,4vw,46px);text-transform:uppercase;letter-spacing:-.5px;line-height:1.06;color:#1B1D21;margin-bottom:12px">Мастерская оборудования</h2>
+    <p data-reveal="2" style="font-size:16px;line-height:1.6;color:#54565B;max-width:640px;margin-bottom:40px">Изготовление и обслуживание стрелкового оборудования. Сборка лука из комплектующих — по запросу (цена договорная).</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px">
+      <div data-reveal="0" style="background:#fff;border:1px solid #E4E0D6;border-radius:12px;padding:26px;box-shadow:0 4px 22px rgba(40,33,15,0.05)">
+        <h4 style="font-family:'Oswald',sans-serif;font-size:17px;text-transform:uppercase;letter-spacing:1px;color:#A9761B;margin-bottom:14px">Стрелы</h4>
+        <div style="display:flex;flex-direction:column;font-size:13.5px;color:#3A3C40">
+          <div style="display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid #ECE6D9"><span>Сборка стрелы с подбором комплектующих</span><b style="color:#1B1D21">120</b></div>
+          <div style="display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid #ECE6D9"><span>Комплект стрел, 12 шт.</span><b style="color:#1B1D21">1200</b></div>
+          <div style="display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid #ECE6D9"><span>Сборка деревянной стрелы (с лаком)</span><b style="color:#1B1D21">240</b></div>
+          <div style="display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid #ECE6D9"><span>Комплект деревянных стрел, 10 шт.</span><b style="color:#1B1D21">2100</b></div>
+          <div style="display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid #ECE6D9"><span>Замена оперения</span><b style="color:#1B1D21">130</b></div>
+          <div style="display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid #ECE6D9"><span>Замена хвостовика</span><b style="color:#1B1D21">40</b></div>
+          <div style="display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid #ECE6D9"><span>Замена наконечника</span><b style="color:#1B1D21">60</b></div>
+          <div style="display:flex;justify-content:space-between;gap:14px;padding:9px 0"><span>Обрезка</span><b style="color:#1B1D21">50</b></div>
+        </div>
+      </div>
+      <div data-reveal="1" style="background:#fff;border:1px solid #E4E0D6;border-radius:12px;padding:26px;box-shadow:0 4px 22px rgba(40,33,15,0.05)">
+        <h4 style="font-family:'Oswald',sans-serif;font-size:17px;text-transform:uppercase;letter-spacing:1px;color:#A9761B;margin-bottom:14px">Блочный лук</h4>
+        <div style="display:flex;flex-direction:column;font-size:13.5px;color:#3A3C40">
+          <div style="display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid #ECE6D9"><span>Установка петли на тетиву</span><b style="color:#1B1D21">300</b></div>
+          <div style="display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid #ECE6D9"><span>Установка пип-сайта</span><b style="color:#1B1D21">500</b></div>
+          <div style="display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid #ECE6D9"><span>Установка полочки</span><b style="color:#1B1D21">700</b></div>
+          <div style="display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid #ECE6D9"><span>Замена тетивы и тросов (комплект)</span><b style="color:#1B1D21">2000</b></div>
+          <div style="display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid #ECE6D9"><span>Регулировка растяжки</span><b style="color:#1B1D21">600</b></div>
+          <div style="display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid #ECE6D9"><span>Синхронизация эксцентриков</span><b style="color:#1B1D21">1000</b></div>
+          <div style="display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid #ECE6D9"><span>Сервисный пакет</span><b style="color:#1B1D21">1200</b></div>
+          <div style="display:flex;justify-content:space-between;gap:14px;padding:9px 0"><span>Полная настройка лука</span><b style="color:#1B1D21">3000</b></div>
+        </div>
+      </div>
+      <div data-reveal="2" style="background:#fff;border:1px solid #E4E0D6;border-radius:12px;padding:26px;box-shadow:0 4px 22px rgba(40,33,15,0.05)">
+        <h4 style="font-family:'Oswald',sans-serif;font-size:17px;text-transform:uppercase;letter-spacing:1px;color:#A9761B;margin-bottom:14px">Классический лук · тетивы</h4>
+        <div style="display:flex;flex-direction:column;font-size:13.5px;color:#3A3C40">
+          <div style="display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid #ECE6D9"><span>Сборка (полочка, плунжер, прицел)</span><b style="color:#1B1D21">1000</b></div>
+          <div style="display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid #ECE6D9"><span>Полная регулировка</span><b style="color:#1B1D21">2000</b></div>
+          <div style="display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid #ECE6D9"><span>Замена центральной обмотки</span><b style="color:#1B1D21">400</b></div>
+          <div style="display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid #ECE6D9"><span>Тетива «бесконечная петля»</span><b style="color:#1B1D21">2100</b></div>
+          <div style="display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid #ECE6D9"><span>Тетива «фламандская»</span><b style="color:#1B1D21">2800</b></div>
+          <div style="display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid #ECE6D9"><span>Тетива для блочного лука (2 экс.)</span><b style="color:#1B1D21">4800</b></div>
+          <div style="display:flex;justify-content:space-between;gap:14px;padding:9px 0"><span>Трос для блочного лука</span><b style="color:#1B1D21">2200</b></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<dc-import name="SiteFooter" hint-size="100%,340px"></dc-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() {
+    import('./site.js').then((m) => { this._m = m; m.initSite(this.el || document); }).catch((e) => console.warn(e));
+  }
+}
+</script>
+</body>
+</html>

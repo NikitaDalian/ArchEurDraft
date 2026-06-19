@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:#F4F1EA;color:#1B1D21;font-family:'Golos Text',sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  ::selection{background:#CBA14A;color:#15171B}
+</style>
+</helmet>
+
+<dc-import name="SiteHeader" active="contacts" hint-size="100%,72px"></dc-import>
+
+<section style="background:#101113;color:#E8E6E1;padding:66px 28px 76px;position:relative;overflow:hidden">
+  <div aria-hidden="true" style="position:absolute;top:50%;right:-120px;transform:translateY(-50%);width:460px;height:460px;opacity:.5;pointer-events:none">
+    <div style="position:absolute;inset:0;border:1px solid rgba(203,161,74,0.14);border-radius:50%"></div>
+    <div style="position:absolute;inset:80px;border:1px solid rgba(203,161,74,0.2);border-radius:50%"></div>
+    <div style="position:absolute;inset:160px;border:1px solid rgba(203,161,74,0.3);border-radius:50%"></div>
+    <div style="position:absolute;top:50%;left:50%;width:10px;height:10px;background:#CBA14A;border-radius:50%;transform:translate(-50%,-50%)"></div>
+  </div>
+  <div style="position:relative;max-width:1280px;margin:0 auto">
+    <div style="display:flex;align-items:center;gap:14px;margin-bottom:16px"><span style="width:30px;height:2px;background:#CBA14A"></span><span style="font-size:12.5px;letter-spacing:3px;color:#CBA14A;text-transform:uppercase;font-weight:600">Контакты</span></div>
+    <h1 style="font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(38px,6vw,76px);text-transform:uppercase;letter-spacing:-1px;line-height:.96">Запишитесь<br>на&nbsp;тренировку</h1>
+    <p style="margin-top:20px;max-width:580px;font-size:17px;line-height:1.6;color:#B8B4AC">Оставьте заявку или позвоните — подберём отделение, площадку и удобную группу.</p>
+  </div>
+</section>
+
+<section style="padding:80px 28px 96px;background:#F4F1EA">
+  <div style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px;align-items:start">
+
+    <div style="display:flex;flex-direction:column;gap:18px">
+      <div data-reveal="0" style="background:#fff;border:1px solid #E4E0D6;border-radius:14px;padding:28px;box-shadow:0 4px 22px rgba(40,33,15,0.05)">
+        <div style="font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#8A8780;margin-bottom:8px">Общие контакты</div>
+        <a href="tel:+79122305649" style="display:block;font-family:'Oswald',sans-serif;font-size:26px;letter-spacing:.5px;color:#1B1D21;text-decoration:none">+7 (912) 230-56-49</a>
+        <a href="{{ emailHref }}" style="display:inline-block;margin-top:8px;font-size:15px;color:#A9761B;text-decoration:none">{{ email }}</a>
+        <div style="margin-top:14px;font-size:14px;line-height:1.6;color:#54565B">Екатеринбург, ул. Краснолесья, 45 (клуб «Классик») · ул. Студенческая, 49 (учебный центр)</div>
+      </div>
+
+      <div data-reveal="1" style="background:#fff;border:1px solid #E4E0D6;border-radius:14px;padding:28px;box-shadow:0 4px 22px rgba(40,33,15,0.05)">
+        <div style="font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#8A8780;margin-bottom:16px">Телефоны отделений</div>
+        <div style="display:flex;flex-direction:column;gap:14px">
+          <div><div style="font-size:13.5px;color:#1B1D21;font-weight:600">Стрельба из лука</div><div style="margin-top:5px;display:flex;flex-wrap:wrap;gap:6px 18px;font-size:14px;color:#54565B"><span>Студенческая 49 — <a href="tel:+79630510395" style="color:#A9761B;text-decoration:none">+7 (963) 051-03-95</a></span><span>Краснолесья — <a href="tel:+79827126961" style="color:#A9761B;text-decoration:none">+7 (982) 712-69-61</a></span></div></div>
+          <div style="padding-top:12px;border-top:1px solid #ECE6D9"><div style="font-size:13.5px;color:#1B1D21;font-weight:600">Пулевая стрельба · Краснолесья</div><div style="margin-top:5px;display:flex;flex-wrap:wrap;gap:6px 18px;font-size:14px;color:#54565B"><span>Винтовка — <a href="tel:+79088870834" style="color:#A9761B;text-decoration:none">+7 (908) 887-08-34</a></span><span>Пистолет — <a href="tel:+79221266830" style="color:#A9761B;text-decoration:none">+7 (922) 126-68-30</a></span></div></div>
+        </div>
+      </div>
+
+      <div data-reveal="2" style="border-radius:14px;border:1px solid #E4E0D6;height:200px;background:repeating-linear-gradient(135deg,#EBE6DA,#EBE6DA 12px,#E3DDCE 12px,#E3DDCE 24px);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden">
+        <span style="position:absolute;width:90px;height:90px;border:1px solid rgba(169,118,27,0.4);border-radius:50%"></span>
+        <span style="position:absolute;width:42px;height:42px;border:1px solid rgba(169,118,27,0.6);border-radius:50%"></span>
+        <span style="position:absolute;width:10px;height:10px;background:#A9761B;border-radius:50%"></span>
+        <span style="position:absolute;bottom:16px;font-family:monospace;font-size:11.5px;color:#8A8167;background:#F4F1EA;padding:5px 10px;border-radius:4px">[ карта проезда ]</span>
+      </div>
+
+      <div data-reveal="3">
+        <button onClick="{{ toggleReq }}" style="background:transparent;border:none;color:#8A8780;font-size:13.5px;cursor:pointer;padding:4px 0;text-decoration:underline;text-underline-offset:3px">{{ reqLabel }}</button>
+        <sc-if value="{{ reqOpen }}" hint-placeholder-val="{{ false }}">
+          <div style="margin-top:12px;background:#fff;border:1px solid #E4E0D6;border-radius:12px;padding:22px;font-size:13px;line-height:1.75;color:#54565B">
+            Общественная организация пропаганды лучного спорта Свердловской области «Стрелковое Общество Евразия».<br>
+            ИНН/КПП 6670994260 / 667901001 · ОГРН 1136600003077 · ОКПО 25932638 · ОКАТО 65401373000 · ОКВЭД 94.99<br>
+            р/с 40703810863010000189 · ПАО «Уральский банк реконструкции и развития», г. Екатеринбург<br>
+            БИК 046577795 · к/с 30101810900000000795
+          </div>
+        </sc-if>
+      </div>
+    </div>
+
+    <div data-reveal="1" style="background:#fff;border:1px solid #E4E0D6;border-radius:14px;padding:36px 32px;box-shadow:0 8px 30px rgba(40,33,15,0.07)">
+      <sc-if value="{{ formNotSent }}" hint-placeholder-val="{{ true }}">
+        <form onSubmit="{{ submitForm }}">
+          <h3 style="font-family:'Oswald',sans-serif;font-weight:600;font-size:23px;text-transform:uppercase;letter-spacing:.5px;color:#1B1D21;margin-bottom:6px">Заявка на запись</h3>
+          <p style="font-size:13.5px;color:#8A8780;margin-bottom:22px">Перезвоним и подберём группу.</p>
+          <div data-slot-note style="display:none;align-items:center;gap:10px;background:#FAF4E6;border:1px solid #E6D4A8;border-radius:8px;padding:12px 14px;margin-bottom:18px">
+            <span style="width:8px;height:8px;border-radius:50%;background:#A9761B;flex-shrink:0"></span>
+            <span style="font-size:13px;color:#7A5A14;line-height:1.4">Выбранное время: <b data-slot-note-text style="color:#5A420E"></b></span>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:16px">
+            <label style="display:flex;flex-direction:column;gap:7px"><span style="font-size:12.5px;letter-spacing:.5px;color:#54565B">Имя</span><input required type="text" placeholder="Как к вам обращаться" style="background:#F8F6F0;border:1px solid #DCD7C9;border-radius:6px;padding:13px 15px;color:#1B1D21;font-size:15px;outline:none;transition:border-color .2s" onfocus="this.style.borderColor='#A9761B'" onblur="this.style.borderColor='#DCD7C9'"></label>
+            <label style="display:flex;flex-direction:column;gap:7px"><span style="font-size:12.5px;letter-spacing:.5px;color:#54565B">Телефон</span><input required type="tel" placeholder="+7 (___) ___-__-__" style="background:#F8F6F0;border:1px solid #DCD7C9;border-radius:6px;padding:13px 15px;color:#1B1D21;font-size:15px;outline:none;transition:border-color .2s" onfocus="this.style.borderColor='#A9761B'" onblur="this.style.borderColor='#DCD7C9'"></label>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+              <label style="display:flex;flex-direction:column;gap:7px"><span style="font-size:12.5px;letter-spacing:.5px;color:#54565B">Отделение</span><select style="background:#F8F6F0;border:1px solid #DCD7C9;border-radius:6px;padding:13px 15px;color:#1B1D21;font-size:15px;outline:none" onfocus="this.style.borderColor='#A9761B'" onblur="this.style.borderColor='#DCD7C9'"><option>Стрельба из лука</option><option>Пулевая стрельба</option><option>Стрельба из арбалета</option></select></label>
+              <label style="display:flex;flex-direction:column;gap:7px"><span style="font-size:12.5px;letter-spacing:.5px;color:#54565B">Площадка</span><select style="background:#F8F6F0;border:1px solid #DCD7C9;border-radius:6px;padding:13px 15px;color:#1B1D21;font-size:15px;outline:none" onfocus="this.style.borderColor='#A9761B'" onblur="this.style.borderColor='#DCD7C9'"><option>Студенческая, 49</option><option>Краснолесья, 45 («Классик»)</option></select></label>
+            </div>
+            <label style="display:flex;flex-direction:column;gap:7px"><span style="font-size:12.5px;letter-spacing:.5px;color:#54565B">Комментарий</span><textarea data-comment rows="3" placeholder="Возраст, опыт, удобное время" style="background:#F8F6F0;border:1px solid #DCD7C9;border-radius:6px;padding:13px 15px;color:#1B1D21;font-size:15px;outline:none;resize:vertical;transition:border-color .2s" onfocus="this.style.borderColor='#A9761B'" onblur="this.style.borderColor='#DCD7C9'"></textarea></label>
+            <button type="submit" style="margin-top:6px;background:#A9761B;color:#fff;font-weight:600;font-size:16px;padding:15px;border:none;border-radius:4px;cursor:pointer;transition:background .2s" onmouseover="this.style.background='#8A5F12'" onmouseout="this.style.background='#A9761B'">Отправить заявку</button>
+            <p style="font-size:11.5px;line-height:1.5;color:#A6A299;text-align:center">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
+          </div>
+        </form>
+      </sc-if>
+      <sc-if value="{{ formSent }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;flex-direction:column;align-items:center;text-align:center;padding:44px 10px">
+          <span style="position:relative;width:64px;height:64px;display:inline-flex;align-items:center;justify-content:center;margin-bottom:22px"><span style="position:absolute;inset:0;border:1.5px solid rgba(169,118,27,0.4);border-radius:50%"></span><span style="position:absolute;inset:13px;border:1.5px solid rgba(169,118,27,0.7);border-radius:50%"></span><span style="position:absolute;inset:26px;background:#A9761B;border-radius:50%"></span></span>
+          <h3 style="font-family:'Oswald',sans-serif;font-weight:600;font-size:24px;text-transform:uppercase;letter-spacing:.5px;color:#1B1D21">В&nbsp;точку!</h3>
+          <p style="margin-top:12px;font-size:15px;line-height:1.6;color:#54565B;max-width:340px">Заявка принята. Мы свяжемся с вами по указанному телефону и подберём удобную группу.</p>
+          <button onClick="{{ resetForm }}" style="margin-top:24px;background:transparent;border:1px solid #C9C2B2;color:#1B1D21;font-size:14px;font-weight:600;padding:12px 24px;border-radius:3px;cursor:pointer">Отправить ещё одну</button>
+        </div>
+      </sc-if>
+    </div>
+  </div>
+</section>
+
+<dc-import name="SiteFooter" hint-size="100%,340px"></dc-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { formSent: false, reqOpen: false };
+  toggleReq = () => this.setState(s => ({ reqOpen: !s.reqOpen }));
+  submitForm = (e) => { if (e && e.preventDefault) e.preventDefault(); this.setState({ formSent: true }); try { localStorage.removeItem('evrazia_slot'); } catch (x) {} };
+  resetForm = () => this.setState({ formSent: false });
+
+  componentDidMount() {
+    import('./site.js').then((m) => { this._m = m; m.initSite(this.el || document); }).catch((e) => console.warn(e));
+    this.applyPrefill();
+  }
+  componentDidUpdate() { this.applyPrefill(); }
+
+  applyPrefill() {
+    let slot = null;
+    try { slot = localStorage.getItem('evrazia_slot'); } catch (e) {}
+    if (!slot) return;
+    const root = this.el || document;
+    const note = root.querySelector('[data-slot-note]');
+    const noteText = root.querySelector('[data-slot-note-text]');
+    if (note && noteText) { noteText.textContent = slot; note.style.display = 'flex'; }
+    const comment = root.querySelector('[data-comment]');
+    if (comment && !comment.value) comment.value = 'Выбранное время: ' + slot;
+  }
+
+  renderVals() {
+    return {
+      formSent: this.state.formSent,
+      formNotSent: !this.state.formSent,
+      reqOpen: this.state.reqOpen,
+      reqLabel: this.state.reqOpen ? 'Скрыть банковские реквизиты' : 'Банковские реквизиты',
+      toggleReq: this.toggleReq,
+      submitForm: this.submitForm,
+      resetForm: this.resetForm,
+      email: 'soekb' + '@' + 'bk.ru',
+      emailHref: 'mailto:' + 'soekb' + '@' + 'bk.ru',
+    };
+  }
+}
+</script>
+</body>
+</html>

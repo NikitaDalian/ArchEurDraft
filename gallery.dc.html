@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:#F4F1EA;color:#1B1D21;font-family:'Golos Text',sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  ::selection{background:#CBA14A;color:#15171B}
+  [data-carousel-track]{scrollbar-width:none}
+  [data-carousel-track]::-webkit-scrollbar{display:none}
+</style>
+</helmet>
+
+<dc-import name="SiteHeader" active="gallery" hint-size="100%,72px"></dc-import>
+
+<section style="background:#101113;color:#E8E6E1;padding:66px 28px 76px;position:relative;overflow:hidden">
+  <div aria-hidden="true" style="position:absolute;top:50%;right:-120px;transform:translateY(-50%);width:460px;height:460px;opacity:.5;pointer-events:none">
+    <div style="position:absolute;inset:0;border:1px solid rgba(203,161,74,0.14);border-radius:50%"></div>
+    <div style="position:absolute;inset:80px;border:1px solid rgba(203,161,74,0.2);border-radius:50%"></div>
+    <div style="position:absolute;inset:160px;border:1px solid rgba(203,161,74,0.3);border-radius:50%"></div>
+    <div style="position:absolute;top:50%;left:50%;width:10px;height:10px;background:#CBA14A;border-radius:50%;transform:translate(-50%,-50%)"></div>
+  </div>
+  <div style="position:relative;max-width:1280px;margin:0 auto">
+    <div style="display:flex;align-items:center;gap:14px;margin-bottom:16px"><span style="width:30px;height:2px;background:#CBA14A"></span><span style="font-size:12.5px;letter-spacing:3px;color:#CBA14A;text-transform:uppercase;font-weight:600">Галерея</span></div>
+    <h1 style="font-family:'Oswald',sans-serif;font-weight:700;font-size:clamp(38px,6vw,76px);text-transform:uppercase;letter-spacing:-1px;line-height:.96">Фотографии</h1>
+    <p style="margin-top:20px;max-width:580px;font-size:17px;line-height:1.6;color:#B8B4AC">Тренировки, турниры и жизнь Общества. Листайте карусель — перетаскиванием, стрелками или точками.</p>
+  </div>
+</section>
+
+<section style="padding:80px 28px 96px;background:#F4F1EA">
+  <div style="max-width:1280px;margin:0 auto">
+    <div data-reveal="0" data-carousel style="position:relative">
+      <div data-carousel-track style="display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 2px 10px">
+        <div data-carousel-slide style="scroll-snap-align:start;flex:0 0 min(86%,560px);aspect-ratio:16/10;border-radius:14px;border:1px solid #E4E0D6;background:repeating-linear-gradient(135deg,#EBE6DA,#EBE6DA 13px,#E3DDCE 13px,#E3DDCE 26px);display:flex;align-items:flex-end;padding:22px;box-shadow:0 6px 24px rgba(40,33,15,0.06)"><span style="font-family:monospace;font-size:12px;color:#8A8167;background:#F4F1EA;padding:6px 11px;border-radius:5px">[ фото · стрельба из лука ]</span></div>
+        <div data-carousel-slide style="scroll-snap-align:start;flex:0 0 min(86%,560px);aspect-ratio:16/10;border-radius:14px;border:1px solid #E4E0D6;background:repeating-linear-gradient(135deg,#EBE6DA,#EBE6DA 13px,#E3DDCE 13px,#E3DDCE 26px);display:flex;align-items:flex-end;padding:22px;box-shadow:0 6px 24px rgba(40,33,15,0.06)"><span style="font-family:monospace;font-size:12px;color:#8A8167;background:#F4F1EA;padding:6px 11px;border-radius:5px">[ фото · пулевая стрельба ]</span></div>
+        <div data-carousel-slide style="scroll-snap-align:start;flex:0 0 min(86%,560px);aspect-ratio:16/10;border-radius:14px;border:1px solid #E4E0D6;background:repeating-linear-gradient(135deg,#EBE6DA,#EBE6DA 13px,#E3DDCE 13px,#E3DDCE 26px);display:flex;align-items:flex-end;padding:22px;box-shadow:0 6px 24px rgba(40,33,15,0.06)"><span style="font-family:monospace;font-size:12px;color:#8A8167;background:#F4F1EA;padding:6px 11px;border-radius:5px">[ фото · соревнования ]</span></div>
+        <div data-carousel-slide style="scroll-snap-align:start;flex:0 0 min(86%,560px);aspect-ratio:16/10;border-radius:14px;border:1px solid #E4E0D6;background:repeating-linear-gradient(135deg,#EBE6DA,#EBE6DA 13px,#E3DDCE 13px,#E3DDCE 26px);display:flex;align-items:flex-end;padding:22px;box-shadow:0 6px 24px rgba(40,33,15,0.06)"><span style="font-family:monospace;font-size:12px;color:#8A8167;background:#F4F1EA;padding:6px 11px;border-radius:5px">[ фото · клуб «Классик» ]</span></div>
+        <div data-carousel-slide style="scroll-snap-align:start;flex:0 0 min(86%,560px);aspect-ratio:16/10;border-radius:14px;border:1px solid #E4E0D6;background:repeating-linear-gradient(135deg,#EBE6DA,#EBE6DA 13px,#E3DDCE 13px,#E3DDCE 26px);display:flex;align-items:flex-end;padding:22px;box-shadow:0 6px 24px rgba(40,33,15,0.06)"><span style="font-family:monospace;font-size:12px;color:#8A8167;background:#F4F1EA;padding:6px 11px;border-radius:5px">[ фото · награждение ]</span></div>
+        <div data-carousel-slide style="scroll-snap-align:start;flex:0 0 min(86%,560px);aspect-ratio:16/10;border-radius:14px;border:1px solid #E4E0D6;background:repeating-linear-gradient(135deg,#EBE6DA,#EBE6DA 13px,#E3DDCE 13px,#E3DDCE 26px);display:flex;align-items:flex-end;padding:22px;box-shadow:0 6px 24px rgba(40,33,15,0.06)"><span style="font-family:monospace;font-size:12px;color:#8A8167;background:#F4F1EA;padding:6px 11px;border-radius:5px">[ фото · тренировочный сбор ]</span></div>
+      </div>
+
+      <button data-carousel-prev type="button" aria-label="Назад" style="position:absolute;top:50%;left:-10px;transform:translateY(-50%);width:48px;height:48px;border-radius:50%;border:1px solid #E4E0D6;background:#fff;color:#A9761B;font-size:22px;cursor:pointer;box-shadow:0 6px 20px rgba(40,33,15,0.12);display:flex;align-items:center;justify-content:center;transition:background .2s,transform .2s" onmouseover="this.style.background='#A9761B';this.style.color='#fff'" onmouseout="this.style.background='#fff';this.style.color='#A9761B'">‹</button>
+      <button data-carousel-next type="button" aria-label="Вперёд" style="position:absolute;top:50%;right:-10px;transform:translateY(-50%);width:48px;height:48px;border-radius:50%;border:1px solid #E4E0D6;background:#fff;color:#A9761B;font-size:22px;cursor:pointer;box-shadow:0 6px 20px rgba(40,33,15,0.12);display:flex;align-items:center;justify-content:center;transition:background .2s,transform .2s" onmouseover="this.style.background='#A9761B';this.style.color='#fff'" onmouseout="this.style.background='#fff';this.style.color='#A9761B'">›</button>
+
+      <div data-carousel-dots style="display:flex;gap:8px;justify-content:center;margin-top:24px"></div>
+    </div>
+
+    <p data-reveal="0" style="margin-top:34px;font-size:13.5px;color:#8A8780;text-align:center">Фотографии будут добавлены. Пришлите снимки тренировок и соревнований — разместим их в галерее.</p>
+  </div>
+</section>
+
+<dc-import name="SiteFooter" hint-size="100%,340px"></dc-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() {
+    import('./site.js').then((m) => { this._m = m; m.initSite(this.el || document); }).catch((e) => console.warn(e));
+  }
+}
+</script>
+</body>
+</html>
